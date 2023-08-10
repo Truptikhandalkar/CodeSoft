@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.hero-sec{
+    height: 100vh;
+    text-align: center;
+}
+.left-nav img{
+    width: 50px;
+    height: 50px;
+}
+.right-nav li{
+    list-style: none;
+}
+.hero-sec-img{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+.sec-1,.sec-2{
+    height: 75vh;
+}
+.banner{
+    position: absolute;
+    top: 45%;
+    z-index: 1000;
+}
+.banner h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.banner h1{
+    font-size: 3.5rem;
+}
+.banner h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+svg{
+    height: 1500px;
+    width: 1300px;
+    margin-left: 90%;
+    margin-bottom: -50%;
+}
+.background-strokes{
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: -1;
+}
+.box{
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.041);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+.box h5{
+    font-weight: 100;
+    word-spacing: 2px;
+    margin-top: 4px;
+}
+.block-1{
+    background: linear-gradient(rgb(255, 105, 235),rgb(36, 11, 182));
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50% 35% 20% 60%;
+    animation: 7s linear infinite morph;
+}
+.block-2{
+    background: linear-gradient(rgb(237, 78, 131),rgb(99, 10, 209));
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50% 35% 20% 60%;
+    animation: 7s linear infinite morph;
+    left: 60%;
+    top: 135%;
+}
+@keyframes morph {
+    0%{
+        border-radius: 50% 40% 80% 60%;
+        transform: rotate(45deg);
+    }
+    50%{
+        border-radius: 60% 90% 50% 70%;
+        transform: rotate(90deg);
+    }
+    100%{
+        border-radius: 50% 70% 80% 60%;
+        transform: rotate(180deg);
+    }
+}
+.about-banner{
+    z-index: 100;
+    position: relative;
+    width: 55vw;
+    line-height: 1.5;
+}
+.about-banner h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.about-banner h3{
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 1.5;
+}
+.about-banner img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.email , .location{
+    margin-top: 20px;
+}
+.side-strokes{
+    position: absolute;
+    right: 0%;
+    height: 50vh;
+    width: 30vw;
+    margin-top: -2%;
+}
+.side-strokes hr{
+    background: linear-gradient(to right , rgb(237, 78, 131),rgb(99, 10, 209));
+    width: 38vw;
+    height: 8px;
+    font-size: 3rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    animation: 10s linear infinite shuffle;
+}
+@keyframes shuffle {
+    0%{
+        transform: scaleX(1.1);
+    }
+    20%{
+        transform: scaleX(1.2);
+    }
+    40%{
+        transform: scaleX(1.1);
+    }
+    60%{
+        transform: scaleX(1.2);
+    }
+    80%{
+        transform: scaleX(1.1);
+    }
+    100%{
+        transform: scaleX(1.2);
+    }
+}
+footer{
+    background: linear-gradient(to right top, rgb(255, 105, 235),rgb(36, 11, 182));
+    height: 80vh;
+    margin-left: -15%;
+    margin-right: -15%;
+    text-align: center;
+    padding-top: 50px;
+}
+footer .logo img{
+    height: 80px;
+    width: 80px;
+}
+.links li {
+    list-style: none;
+    color: #0a0a0a;
+    font-size: 1.15rem;
+}
+a:hover{
+    color: #000000;
+}
+.social-links ion-icon{
+    font-size: 1.5rem;
+    padding: 25px;
+}
+.social-links ion-icon:hover{
+    text-shadow: 0 0 40px #000;
+    color: #000;
+}
+.copyright{
+    margin-top: 80px;
+}
+.project-container{
+    margin-top: 4.5%;
+}
+.project-img img{
+    height: 30vh;
+    width: 22vw;
+    border-radius: 6px;
+}
+.project-card{
+    height: 60vh;
+    width: 40vw;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.041);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+.project-info h1{
+    font-size: 1.4rem;
+}
+.project-info h3{
+    font-size: 1rem;
+    font-weight: 100;
+    word-spacing: 5px;
+}
+.project-block-1{
+    background: linear-gradient(rgb(255, 105, 235),rgb(36, 11, 182));
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    left: 5%;
+    top: 30%;
+    border-radius: 50% 35% 20% 60%;
+    animation: 7s linear infinite morph;
+}
+.project-block-2{
+    background: linear-gradient(rgb(255, 105, 235),rgb(36, 11, 182));
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    top: 15%;
+    border-radius: 50% 35% 20% 60%;
+    animation: 7s linear infinite morph;
+}
+.project-block-3{
+    background: linear-gradient(rgb(255, 105, 235),rgb(36, 11, 182));
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    right: 35%;
+    top: 55%;
+    border-radius: 50% 35% 20% 60%;
+    animation: 7s linear infinite morph;
+}

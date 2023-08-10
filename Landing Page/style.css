@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    width: 100%;
+    z-index: 10000;
+}
+.bannerImg{
+    height: 80vh;
+    width: 50vw;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    animation: 3s infinite bounce;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+.blue{
+    height: 120vh;
+    width: 60%;
+    background-color: #007bff82;
+    position: absolute;
+    right: -20%;
+    top: -40%;
+    transform: rotate(-60deg);
+    border-radius: 30% 20px 100% 30%;
+    z-index: -3;
+}
+.darkblue{
+    height: 130vh;
+    width: 70%;
+    background-color: #17a3b85a;
+    position: absolute;
+    right: -23%;
+    top: -40%;
+    transform: rotate(-60deg);
+    border-radius: 30% 20px 100% 100%;
+    z-index: -2;
+}
+.pink{
+    height: 160vh;
+    width: 80%;
+    background-color: #e83e8d48;
+    position: absolute;
+    right: -23%;
+    top: -55%;
+    transform: rotate(-45deg);
+    border-radius: 80% 20% 100% 150%;  
+    z-index: -1;  
+}
+.right-nav ul li{
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.right-nav ul li a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+.right-nav ul li a:hover::after{
+    width: 100%;
+}
+.right-nav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s  ease-in-out;
+}
+.left-nav{
+    margin-top: 2px;
+    margin-left: 45px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.left-nav img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 8%;
+}
+.bannerText{
+    margin-top: 18%;
+}
+.bannerText h1{
+    font-size: 4rem;
+}
+.bannerText h4{
+    font-weight: 600;
+    font-size: 20px;
+}
+.gradientBtn{
+    font-size: 12px;
+    background: linear-gradient(to top right ,rgb(158, 218, 248),rgb(206, 112, 225));
+    border: 1px solid rgb(158, 218, 248);
+    border-radius: 50px;
+    box-shadow: 0 0 35px rgb(206, 112, 225);
+}
+.sec-2{
+    height: 50vh;
+}
+.block-div{
+    margin-top: 20%;
+    box-shadow: 0 0 35px rgb(206, 112, 225);
+    height: 35vh;
+}
+.sub-block{
+    text-align: center;
+}
+.sub-block i{
+    font-size: 2rem;
+}
+.sub-block .text-1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.sec-3{
+    height: 80vh;
+}
+.left-div{
+    background: linear-gradient(to top right ,rgb(158, 218, 248),rgb(206, 112, 225));
+    position: relative;
+    left: 1%;
+    height: 50vh;
+    width: 35vw;
+}
+.about-sec img{
+    height: 50vh;
+    width: 33vw;
+    position: absolute;
+    bottom: -125%;
+    left: 15%;
+}
+.right-div{
+    height: 70vh;
+    width: 40vw;
+    position: relative;
+    right: -1%;
+    line-height: 1.8;
+}
+.right-div h1{
+    font-size: 2.5rem;
+    margin-bottom: -20px;
+}
+.right-div h6{
+    color: rgb(107, 107, 107);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.right-div h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.sec-4{
+    height: 90vh;
+}
+.card-sec img{
+    height: 45vh;
+    width: 20vw;
+    border-radius: 6px;
+}
+.card{
+    height: 75vh;
+    width: 20vw;
+    box-shadow: 0 0 35px rgb(206, 112, 225);
+    border-radius: 12px;
+}
+.card:hover{
+    transform: translateY(-10px);
+    transition: 0.1s linear all;
+}
+.card .price{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card .total-price{
+    color: rgb(107, 107, 107);
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.card .discount{
+    color: red;
+    font-size: 15px;
+}
+.card .text{
+    font-size: 15px;
+    color: rgb(107, 107, 107);
+}
+.card .text .read-more{
+    color: rgb(107, 107, 107);
+}
+footer{
+    z-index: auto;
+    background-color: lightblue;
+    margin-left: -10%;
+    margin-right: -10%;
+    color: #fff;
+    line-height: 1.5;
+    height: 65vh;
+}
+footer .footer-sec{
+    overflow: hidden;
+}
+.div-1 .text{
+    line-height: 2;
+    z-index: 10;
+}
+.div-1 , .div-2 , .div-3{
+    height: 40vh;
+    padding: 40px;
+    z-index: 10000;
+}
+.div-1{
+    width: 30vw;
+}
+.div-2{
+    width: 15vw;
+    line-height: 2.5;
+}
+.div-3{
+    width: 15vw;
+    line-height: 2.5;
+}
+.div-3 h6{
+    color: rgb(107, 107, 107);
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+.brand-name{
+    z-index: 10;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+}
+footer li i:hover{
+    color: rgb(206, 112, 225);
+}
+.bottom-div{
+    text-align: center;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1000;
+}
+.bg-div-1{
+    height: 45vh;
+    width: 30vw;
+    border-radius: 30% 50% 60% 80%;
+    transform: rotate(-15deg);
+    background-color: rgba(123, 147, 233, 0.555);
+    position: absolute;
+    top: 340%;
+    z-index: 1;
+}
+.bg-div-2{
+    height: 65vh;
+    width: 60vw;
+    border-radius: 10% 140% 0 0;
+    background-color: rgba(120, 159, 244, 0.324);
+    position: absolute;
+    top: 334%;
+    z-index: 2;
+}
+.bg-div-3{
+    height: 55vh;
+    width: 40vw;
+    border-radius: 70% 120% 30% 0;
+    background-color: #9795ddac;
+    position: absolute;
+    top: 343%;
+    z-index: 3;
+}
+.bg-div-4{
+    height: 45vh;
+    width: 40vw;
+    background-color: #9795dd4b;
+    border-radius: 80% 90% 130% 90%;
+    position: absolute;
+    top: 343%;
+    right: -10%;
+    transform: rotate(15deg);
+    z-index: 3;
+}
